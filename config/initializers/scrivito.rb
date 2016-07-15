@@ -8,13 +8,6 @@ Scrivito.configure do |config|
   # config.api_key = 'secret'
   #  config.editing_auth do |env|
   
-    Scrivito::User.system_user
-    end
-    
-    config.find_user do |user_id|
-      Scrivito::User.system_user
-    end
-
   # Disable the default routes to allow route configuration
   config.inject_preset_routes = false
 end
