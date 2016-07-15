@@ -53,4 +53,12 @@ group :development do
   # gem 'spring'
 end
 
+group :production do
+  # Gems that are recommended for using Heroku:
+  gem 'rails_12factor'
+
+  # Postgres support (added for Heroku)
+  gem 'pg'
+end
+
 gem 'scrivito'
